@@ -14,7 +14,7 @@ server.use(indexRouter);
 server.get('/status', (req, res) => {
     return res.send('ok');
   });
-  server.listen(5000, () => {
+  server.listen(process.env.PORT, () => {
     console.log(`Servidor entrou na porta ${process.env.PORT}`);
   });
 
